@@ -1,0 +1,25 @@
+package javaapplication110;
+
+import java.util.Scanner;
+
+public class JavaApplication110 {
+
+    public static void main(String[] args) {
+     Scanner ler = new Scanner(System.in);
+     //dados e leitura//
+        System.out.println("insira três numeros");
+        numeroMaior(ler.nextInt(), ler.nextInt(), ler.nextInt());
+    }
+
+    private static void numeroMaior(int n1, int n2, int n3) {
+        if (n1 > n2 && n1>n3){
+            System.out.println("o numero maior é: "+n1);
+        }else if (n2>n1 && n2>n3){
+            System.out.println("o numero maior é: "+n2);
+        } else{
+            System.out.println("o numero maior é :"+n3);
+        }
+            
+        }
+}
+       
