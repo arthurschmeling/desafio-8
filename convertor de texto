@@ -1,0 +1,21 @@
+package javaapplication121;
+
+import java.util.Scanner;
+
+
+public class JavaApplication121 {
+
+   
+    public static void main(String[] args) {
+       converteMaiusculaEConta("texto");
+    }
+
+    private static void converteMaiusculaEConta(String texto) {
+     Scanner ler =new Scanner (System.in);
+        System.out.println("insira algum texto");
+        texto=ler.nextLine();
+        texto= texto.toUpperCase();
+        System.out.println(texto+" comprimento do texto: "+ texto.length());
+    }
+    
+}
