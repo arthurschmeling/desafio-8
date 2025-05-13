@@ -1,0 +1,26 @@
+package javaapplication127;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+
+public class JavaApplication127 {
+
+ 
+    public static void main(String[] args) {
+      Scanner ler= new Scanner(System.in);
+       DecimalFormat decimal = new DecimalFormat("0.00");
+       double raio;
+        System.out.println("insira o raio");
+        raio=ler.nextDouble();
+        System.out.println("O volume da esfera é " + decimal.format(calcularVolume(raio)));
+    
+    }
+
+    private static Object calcularVolume(double raioVolume) {
+      double volume;
+       volume = (4/3) * Math.PI * Math.pow(raioVolume,3);
+       return volume;
+    }
+    
+}
