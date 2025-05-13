@@ -1,0 +1,22 @@
+package javaapplication121;
+
+import java.util.Scanner;
+
+
+public class JavaApplication121 {
+
+   
+    public static void main(String[] args) {
+      Scanner ler= new Scanner(System.in);
+        System.out.println("insira o texto para ser invertido");
+        String texto= ler.nextLine();
+        System.out.println(inverterTexto(texto));
+    }
+
+    private static String inverterTexto(String textoinvertido) {
+      return new StringBuilder(textoinvertido).reverse().toString();
+    }
+
+    
+    }
+    
