@@ -1,0 +1,29 @@
+package javaapplication123;
+
+import java.util.Scanner;
+
+
+public class JavaApplication123 {
+
+  
+    public static void main(String[] args) {
+        Scanner ler= new Scanner(System.in);
+        System.out.println("insira a quantidade de numeros que voce quer somat");
+        int qnt;
+        qnt=ler.nextInt();
+        somarLista(qnt);
+    }
+
+    private static void somarLista(int quantidade) {
+        Scanner ler = new Scanner (System.in);
+        int soma=0;
+        int num;     
+         for(int qnt = 0; qnt < quantidade ; qnt++){
+        System.out.println("Inisira um número :");
+        num = ler.nextInt();
+        soma += num;
+        }
+        System.out.println("resultado da soma: " +soma);
+    }
+    
+}
